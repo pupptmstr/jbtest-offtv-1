@@ -14,11 +14,13 @@ class Test {
         smallNamesList.add("adc")
         smallNamesList.add("rvy")
         smallNamesList.add("xyz")
-        assertEquals("arxbdcefghijklmnopqstuvwyz", restoreAlphabet(
-            buildAdjacencyListForAlphabet(
-                smallNamesList
+        assertEquals(
+            "arxbdcefghijklmnopqstuvwyz", restoreAlphabet(
+                buildAdjacencyListForAlphabet(
+                    smallNamesList
+                )
             )
-        ))
+        )
     }
 
     @Test
@@ -45,11 +47,13 @@ class Test {
         middleNamesList.add("adelyn")
         middleNamesList.add("adelynn")
         middleNamesList.add("adley")
-        assertEquals("abdelsiycfghjkmnopqrtuvwxz", restoreAlphabet(
-            buildAdjacencyListForAlphabet(
-                middleNamesList
+        assertEquals(
+            "abdelsiycfghjkmnopqrtuvwxz", restoreAlphabet(
+                buildAdjacencyListForAlphabet(
+                    middleNamesList
+                )
             )
-        ))
+        )
     }
 
     @Test
@@ -148,11 +152,13 @@ class Test {
         largeNamesList.add("leyla")
         largeNamesList.add("lia")
         largeNamesList.add("liana")
-        assertEquals("ahbcdjkeiolnmrsutxyfgpqvwz", restoreAlphabet(
-            buildAdjacencyListForAlphabet(
-                largeNamesList
+        assertEquals(
+            "ahbcdjkeiolnmrsutxyfgpqvwz", restoreAlphabet(
+                buildAdjacencyListForAlphabet(
+                    largeNamesList
+                )
             )
-        ))
+        )
     }
 
     @Test
@@ -164,10 +170,12 @@ class Test {
         smallNamesList.add("adc")
         smallNamesList.add("acd")
         smallNamesList.add("xyz")
-        assertEquals("Impossible", restoreAlphabet(
-            buildAdjacencyListForAlphabet(
-                smallNamesList
+        assertEquals(
+            "Impossible", restoreAlphabet(
+                buildAdjacencyListForAlphabet(
+                    smallNamesList
+                )
             )
-        ))
+        )
     }
 }

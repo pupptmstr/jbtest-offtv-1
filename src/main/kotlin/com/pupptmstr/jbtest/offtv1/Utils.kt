@@ -33,7 +33,7 @@ fun createEmptyAdjacencyList(): MutableMap<Char, MutableSet<Char>> {
     return res
 }
 
-fun createStartColorsList() : MutableList<Color> {
+fun createStartColorsList(): MutableList<Color> {
     val colors = mutableListOf<Color>()
     for (i in 0 until ALPHABET_SIZE) {
         colors.add(Color.WHITE)

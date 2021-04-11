@@ -49,8 +49,6 @@ fun buildAdjacencyListForAlphabet(names: List<String>): MutableMap<Char, Mutable
     return adjacencyList
 }
 
-
-
 fun restoreAlphabet(adjacencyList: MutableMap<Char, MutableSet<Char>>): String {
     val roots = mutableMapOf<Char, Boolean>()//true - корень
     val colors = createStartColorsList()
@@ -83,10 +81,10 @@ fun restoreAlphabet(adjacencyList: MutableMap<Char, MutableSet<Char>>): String {
     }
 }
 
-fun dfs(adjacencyList: MutableMap<Char, MutableSet<Char>>, vertex: Char, colors: MutableList<Color>) : String {
+fun dfs(adjacencyList: MutableMap<Char, MutableSet<Char>>, vertex: Char, colors: MutableList<Color>): String {
     val vertexPosition = vertex - 'a'
     val res = StringBuilder()
-    if(colors[vertexPosition] == Color.GREY) {
+    if (colors[vertexPosition] == Color.GREY) {
         return "Impossible"
     } else {
         if (colors[vertexPosition] == Color.BLACK) {
