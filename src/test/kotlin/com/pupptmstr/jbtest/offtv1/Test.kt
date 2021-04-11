@@ -8,6 +8,7 @@ class Test {
     @Test
     fun smallTest() {
         val smallNamesList = mutableListOf<String>()
+        //5
         smallNamesList.add("abc")
         smallNamesList.add("abd")
         smallNamesList.add("adc")
@@ -23,6 +24,7 @@ class Test {
     @Test
     fun middleTest() {
         val middleNamesList = mutableListOf<String>()
+        //20
         middleNamesList.add("aaliyah")
         middleNamesList.add("abby")
         middleNamesList.add("abigail")
@@ -53,6 +55,7 @@ class Test {
     @Test
     fun largeTest() {
         val largeNamesList = mutableListOf<String>()
+        //92
         largeNamesList.add("aaliyah")
         largeNamesList.add("abby")
         largeNamesList.add("abigail")
@@ -155,6 +158,7 @@ class Test {
     @Test
     fun testToFail() {
         val smallNamesList = mutableListOf<String>()
+        //5
         smallNamesList.add("abc")
         smallNamesList.add("abd")
         smallNamesList.add("adc")
